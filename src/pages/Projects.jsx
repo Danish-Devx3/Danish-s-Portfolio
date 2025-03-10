@@ -2,7 +2,7 @@ const ProjectCard = ({ image, title, description, githubLink, demoLink }) => {
   return (
     <div className="bg-[#1e1e1e] rounded-lg overflow-hidden">
       
-      <div className="h-64 overflow-hidden">
+      <div className="h-48 md:h-64 overflow-hidden">
         <img 
           src={image} 
           alt={title} 
@@ -11,25 +11,25 @@ const ProjectCard = ({ image, title, description, githubLink, demoLink }) => {
       </div>
 
       
-      <div className="p-6">
-        <h3 className="text-[#ff9999] text-2xl mb-3">Gemini Clone</h3>
-        <p className="text-white mb-6">
+      <div className="p-4 md:p-6">
+        <h3 className="text-[#ff9999] text-xl md:text-2xl mb-3">{title}</h3>
+        <p className="text-white text-sm md:text-base mb-6">
           {description}
         </p>
 
         
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <a 
             href={githubLink} 
             target="_blank" 
-            className="px-6 py-2 rounded-md border-2 border-[#00bfff] text-[#00bfff] hover:bg-[#00bfff] hover:text-white transition-colors duration-300"
+            className="text-center px-4 md:px-6 py-2 rounded-md border-2 border-[#00bfff] text-[#00bfff] hover:bg-[#00bfff] hover:text-white transition-colors duration-300"
           >
             Github
           </a>
           <a 
             href={demoLink} 
             target="_blank" 
-            className="px-6 py-2 rounded-md bg-[#ff9999] text-white hover:bg-[#ff7777] transition-colors duration-300"
+            className="text-center px-4 md:px-6 py-2 rounded-md bg-[#ff9999] text-white hover:bg-[#ff7777] transition-colors duration-300"
           >
             Live Demo
           </a>
@@ -58,11 +58,11 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="min-h-screen py-20 px-16">
+    <section id="projects" className="min-h-screen py-20 px-4 md:px-16">
       
       <div className="text-center mb-16">
-        <h3 className="text-[#ff9999] text-2xl mb-4">Explore Recent Innovations</h3>
-        <h2 className="text-white text-5xl font-bold underline">Projects</h2>
+        <h3 className="text-[#ff9999] text-xl md:text-2xl mb-4">Explore Recent Innovations</h3>
+        <h2 className="text-white text-4xl md:text-5xl font-bold underline">Projects</h2>
       </div>
 
       

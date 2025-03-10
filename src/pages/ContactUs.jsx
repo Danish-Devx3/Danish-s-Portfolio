@@ -27,13 +27,13 @@ export default function Contact() {
     };
   
     return (
-      <section id="contact" className="min-h-screen py-20 px-16 bg-[#121212]">
+      <section id="contact" className="min-h-screen py-20 px-4 md:px-16 bg-[#121212]">
         <div className="text-center mb-16">
-          <h3 className="text-[#ff9999] text-2xl mb-4">Get In Touch</h3>
-          <h2 className="text-white text-5xl font-bold underline">Contact Me</h2>
+          <h3 className="text-[#ff9999] text-xl md:text-2xl mb-4">Get In Touch</h3>
+          <h2 className="text-white text-4xl md:text-5xl font-bold underline">Contact Me</h2>
         </div>
 
-        <div className="max-w-2xl mx-auto bg-[#1e1e1e] p-8 rounded-xl shadow-lg">
+        <div className="max-w-2xl mx-auto bg-[#1e1e1e] p-4 md:p-8 rounded-xl shadow-lg">
           <form onSubmit={onSubmit} className="space-y-6">
             <div>
               <label htmlFor="name" className="block text-[#ff9999] text-lg mb-2">Name</label>

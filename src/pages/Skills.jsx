@@ -39,13 +39,24 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="min-h-screen py-20 px-16 bg-[#121212]">
+    <section id="skills" className="min-h-screen py-20 px-4 md:px-16 bg-[#121212]">
       <div className="text-center mb-16">
-        <h3 className="text-[#ff9999] text-2xl mb-4">What I Know</h3>
-        <h2 className="text-white text-5xl font-bold underline">My Skills</h2>
+        <h3 className="text-[#ff9999] text-xl md:text-2xl mb-4">What I Know</h3>
+        <h2 className="text-white text-4xl md:text-5xl font-bold underline">My Skills</h2>
       </div>
 
-      <div className="relative max-w-5xl mx-auto">
+      {/* Mobile View */}
+      <div className="md:hidden space-y-6">
+        {skills.map((skill, index) => (
+          <div key={index} className="bg-[#1e1e1e] p-4 rounded-xl shadow-lg border border-gray-800">
+            <h3 className="text-[#ff9999] text-xl font-semibold mb-2">{skill.title}</h3>
+            <p className="text-gray-300 text-sm">{skill.description}</p>
+          </div>
+        ))}
+      </div>
+
+      {/* Desktop View */}
+      <div className="hidden md:block relative max-w-5xl mx-auto">
         <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-1 bg-gray-800"></div>
         <div className="relative">
           {skills.map((skill, index) => (

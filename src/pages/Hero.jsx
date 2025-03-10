@@ -3,8 +3,8 @@ import { FaSquareXTwitter } from 'react-icons/fa6';
 
 const Hero = () => {
   return (
-    <div className="min-h-screen flex items-center justify-between px-16 py-20">
-      <div className="relative w-[400px] h-[400px]">
+    <div className="min-h-screen flex flex-col md:flex-row items-center justify-between px-4 md:px-16 py-20 gap-8">
+      <div className="relative w-[280px] md:w-[400px] h-[280px] md:h-[400px] mx-auto md:mx-0">
         <div className="w-full h-full rounded-full border-4 border-gray-800 relative overflow-hidden">
           <div className="absolute inset-0 border-4 border-transparent border-t-purple-500 rounded-full"></div>
           <div className="absolute inset-0 border-4 border-transparent border-b-blue-500 rounded-full"></div>
@@ -19,10 +19,10 @@ const Hero = () => {
       </div>
 
       
-      <div className="flex flex-col items-start space-y-6 max-w-xl">
-        <h2 className="text-[#ff9999] text-2xl">Hello I'm</h2>
-        <h1 className="text-white text-6xl font-bold">Danish Ansari</h1>
-        <p className="text-[#ff9999] text-3xl">React Developer</p>
+      <div className="flex flex-col items-center md:items-start space-y-6 max-w-xl text-center md:text-left">
+        <h2 className="text-[#ff9999] text-xl md:text-2xl">Hello I'm</h2>
+        <h1 className="text-white text-4xl md:text-6xl font-bold">Danish Ansari</h1>
+        <p className="text-[#ff9999] text-2xl md:text-3xl">React Developer</p>
         
         
         <div className="flex gap-4 mt-6">
