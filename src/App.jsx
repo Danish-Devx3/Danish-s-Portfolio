@@ -1,21 +1,11 @@
-import Navbar from './pages/Navbar'
-import Hero from './pages/Hero'
-import About from './pages/About'
-import Projects from './pages/Projects'
-import Skills from './pages/Skills'
-import Contact from './pages/ContactUs'
-
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Contact />
+    <div className="text-7xl font-bold">
+      <div className="fixed top-0 -z-10 min-h-screen w-full bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,RGB(79,100,229,0.3),rgba(255,255,255,0))]">
+ 
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
