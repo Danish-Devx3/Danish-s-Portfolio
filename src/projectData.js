@@ -1,9 +1,9 @@
-import project1 from "../public/project1.png";
-import project2 from "../public/project2.png";
-import project3 from "../public/project3.png";
-import project4 from "../public/project4.jpg";
-import project5 from "../public/project5.png";
-import project6 from "../public/project6.png";
+import project1 from "/project1.png";
+import project2 from "/project2.png";
+import project3 from "/project3.png";
+import project4 from "/project4.jpg";
+import project5 from "/project5.png";
+import project6 from "/project6.png";
 
 export const projectData = [
   {
