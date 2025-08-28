@@ -1,63 +1,33 @@
-import project1 from "/project1.png";
-import project2 from "/project2.png";
-import project3 from "/project3.png";
-import project4 from "/project4.jpg";
-import project5 from "/project5.png";
-import project6 from "/project6.png";
+import project1 from "/project1.webp";
+import project2 from "/project2.webp";
+
 
 export const projectData = [
   {
-    id: 1,
-    image: project1,
-    title: "E-Commerce Dashboard",
-    description:
-      "A comprehensive dashboard for managing online stores with real-time analytics, inventory management, and sales tracking. Built with modern web technologies for optimal performance.",
-    link: "https://github.com/yourusername/ecommerce-dashboard",
-    technologies: ["NextJs", "TypeScript", "PostgreSQL", "Docker", "Drizzle"],
-  },
-  {
-    id: 2,
-    image: project2,
-    title: "AI Content Generator",
-    description:
-      "An AI-powered platform that helps create high-quality content using machine learning algorithms. Features include text generation, image creation, and content optimization.",
-    link: "https://github.com/yourusername/ai-content-generator",
-    technologies: ["React", "Python", "TensorFlow", "FastAPI", "Redis"],
-  },
-  {
-    id: 3,
-    image: project3,
-    title: "Social Media Analytics",
-    description:
-      "A powerful analytics tool that provides insights into social media performance across multiple platforms. Includes customizable dashboards and automated reporting.",
-    link: "https://github.com/yourusername/social-analytics",
-    technologies: ["Vue.js", "Node.js", "MongoDB", "Express", "D3.js"],
-  },
-  {
     id: 4,
-    image: project4,
-    title: "Smart Home Hub",
+    image: project1,
+    title: "Shotsy – AI Video Generator",
     description:
-      "A centralized IoT platform for managing smart home devices. Features include device automation, energy monitoring, and voice control integration.",
-    link: "https://github.com/yourusername/smart-home-hub",
-    technologies: ["React Native", "GraphQL", "AWS IoT", "WebSocket", "Redux"],
+      "A web app that converts text into AI-powered short videos. Integrates Murf AI, AssemblyAI, and Gemini API with CI/CD pipelines and Dockerized deployment support.",
+    link: "https://github.com/yourusername/shotsy",
+    technologies: ["Next.js", "Tailwind CSS", "Remotion", "Docker", "GitHub Actions"],
   },
   {
     id: 5,
-    image: project5,
-    title: "Fitness Tracker",
+    image: project2,
+    title: "CodeDrop",
     description:
-      "A comprehensive fitness tracking application that helps users monitor workouts, nutrition, and progress. Includes AI-powered workout recommendations.",
-    link: "https://github.com/yourusername/fitness-tracker",
-    technologies: ["Flutter", "Firebase", "TensorFlow Lite", "SQLite", "BLoC"],
+      "A code snippet sharing platform with authentication, search, and like features. Built with Next.js and Node.js, using MongoDB aggregation queries for fast results.",
+    link: "https://github.com/yourusername/codedrop",
+    technologies: ["Next.js", "Node.js", "Express.js", "TypeScript", "MongoDB"],
   },
   {
     id: 6,
-    image: project6,
-    title: "Task Management System",
+    image: "",
+    title: "Dev-Chatty",
     description:
-      "A collaborative project management tool with features like task tracking, team communication, and progress monitoring. Optimized for both small teams and large organizations.",
-    link: "https://github.com/yourusername/task-management",
-    technologies: ["Angular", "NestJS", "PostgreSQL", "RxJS", "Socket.io"],
+      "An AI chatbot with real-time conversations and responsive UI. Uses Google Gemini for natural interactions and deployed on Netlify with modern CI/CD workflows.",
+    link: "https://github.com/yourusername/dev-chatty",
+    technologies: ["React", "Vite", "Context API", "Google Gemini", "Netlify"],
   },
-];
+]

@@ -10,9 +10,9 @@ const Projects = () => {
        whileInView={{opacity: 1, y: 0}}
        viewport={{once: true}}
        transition={{duration: 0.8}}
-       className='text-4xl font-bold text-center mb-10 sm:text-5xl'
+       className='text-4xl text-indigo-500 text-shadow-md font-bold text-center sm:text-3xl'
       >
-        My Projects
+        Projects
       </motion.h1>
 
       <motion.div

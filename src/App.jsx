@@ -1,7 +1,7 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Navbar from "./pages/Navbar";
+import Projects from "./pages/Projects";
 
 function App() {
   return (
