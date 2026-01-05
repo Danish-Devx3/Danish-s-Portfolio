@@ -13,6 +13,7 @@ export const personalDetails = {
         { name: "Twitter", url: "https://twitter.com/Danish_Devx3", icon: FaTwitter }, // Assuming handle from prev info, text didn't specify twitter handle explicitly but referenced "danish.devx3" often
         { name: "Email", url: "mailto:danish.devx3@gmail.com", icon: HiMail },
     ],
+    bookCallUrl: "https://calendar.google.com/calendar/u/0/r/eventedit?text=Book+a+Call+with+Danish+Ansari&details=Let%27s+discuss+your+project+ideas!",
     about: "I am a passionate Full-Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) and Next.js, with expertise in building REST APIs, designing scalable architectures, and developing responsive front-end applications. Skilled in JavaScript, TypeScript, Tailwind CSS, and API testing with Postman, I also bring experience with Docker, GitHub Actions, and CI/CD pipelines to ensure reliable and efficient deployments on Vercel, Netlify, and Nginx.",
     birthDate: "2002-01-01", // Approximate based on College start 2023 (assuming ~21y/o then? or 18? Defaulting to year 2000-2004 range if not specified. Text says 'Time on Earth' counter wanted.)
 };

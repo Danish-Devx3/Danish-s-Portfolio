@@ -15,7 +15,9 @@ const Contact = () => {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           {/* Placeholder for Book a Call - can be a link to Calendly */}
           <a
-            href="#"
+            href={personalDetails.bookCallUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-2 bg-neutral-100 text-neutral-900 px-6 py-3 rounded-lg font-medium hover:bg-neutral-200 transition-colors w-full sm:w-auto justify-center"
           >
             <BiCalendar size={20} />
