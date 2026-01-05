@@ -1,61 +1,37 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { HiMail } from "react-icons/hi";
+import { BiCalendar } from "react-icons/bi";
+import { personalDetails } from "../data";
 
 const Contact = () => {
-  
-  const mailto = () => {
-    window.location.href = "mailto: danish.devx3@gmail.com";
-  };
-
   return (
-    <div
-      className="mx-auto w-full min-h-[50vh] px-4 sm:px-6 lg:px-8"
-      id="contact"
-    >
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5, delay: 0.1 }}
-        className="max-w-4xl mx-auto mt-16 flex items-center justify-center flex-col gap-8 sm:gap-12"
-      >
-        <motion.h1
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-4xl sm:text-3xl font-bold text-indigo-500 text-center"
-        >
-          Contact Me
-        </motion.h1>
+    <section id="contact" className="py-10">
+      <div className="bg-neutral-900/50 rounded-2xl p-8 md:p-12 text-center border border-neutral-800">
+        <h2 className="text-2xl md:text-3xl font-bold text-neutral-100 mb-4">Let's work together</h2>
+        <p className="text-neutral-400 mb-8 max-w-lg mx-auto">
+          Have a project in mind? I'm always open to discussing new ideas and opportunities.
+        </p>
 
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.3 }}
-          className="text-gray-600 text-base font-medium text-center max-w-2xl leading-relaxed"
-        >
-          Have an exciting mobile or web project in mind? Let's bring it to life
-          with cutting-edge technology.
-        </motion.p>
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+          {/* Placeholder for Book a Call - can be a link to Calendly */}
+          <a
+            href="#"
+            className="flex items-center gap-2 bg-neutral-100 text-neutral-900 px-6 py-3 rounded-lg font-medium hover:bg-neutral-200 transition-colors w-full sm:w-auto justify-center"
+          >
+            <BiCalendar size={20} />
+            Book a Call
+          </a>
 
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-          className=""
-        >
-
-
-            <button onClick={mailto} className="bg-indigo-500 text-white text-base font-semibold py-2 px-4 rounded-md shadow-md hover:bg-indigo-600 transition duration-200">
-              Get in Touch
-            </button>
-         
-        </motion.div>
-      </motion.div>
-    </div>
+          <a
+            href={`mailto:${personalDetails.email} `}
+            className="flex items-center gap-2 bg-neutral-800 text-neutral-200 px-6 py-3 rounded-lg font-medium hover:bg-neutral-700 transition-colors border border-neutral-700 w-full sm:w-auto justify-center"
+          >
+            <HiMail size={20} />
+            Email Me
+          </a>
+        </div>
+      </div>
+    </section>
   );
 };
 
