@@ -55,11 +55,30 @@ export const education = [
 
 export const projects = [
     {
+        id: 4,
+        title: "Notive 📝",
+        description: "A modern, feature-rich note-taking application built with Next.js 15, featuring secure authentication, rich text editing, and a beautiful user interface.",
+        technologies: ["Next.js 15", "TypeScript", "Tailwind CSS", "shadcn/ui", "Tiptap", "Neon DB", "Drizzle ORM", "Better Auth"],
+        github: "https://github.com/Danish-Devx3/notive",
+        live: "https://notive-manage-note.vercel.app/",
+        image: "/project1.webp",
+    },
+    {
+        id: 5,
+        title: "Archi-Text",
+        description: "Visualize chaos. Instantly convert natural language, code, and raw data into professional diagrams using local AI.",
+        technologies: ["Next.js 16", "React 19", "Tailwind CSS 4", "Mermaid.js", "Ollama", "Lucide React"],
+        github: "https://github.com/Danish-Devx3/archi-text",
+        live: "", // Add live link if available
+        image: "/archi-text.png",
+    },
+    {
         id: 1,
         title: "Shotsy – AI Video Generator",
         description: "An AI-powered short video generator integrating Google Gemini, AssemblyAI, and Murf AI.",
         technologies: ["Next.js", "Tailwind CSS", "Gemini API", "AssemblyAI", "Murf AI"],
-        link: "https://github.com/Danish-Devx3/Shotsy-Short-Video-GenAi",
+        github: "https://github.com/Danish-Devx3/Shotsy-Short-Video-GenAi",
+        live: "",
         image: "/project1.webp",
     },
     {
@@ -67,7 +86,8 @@ export const projects = [
         title: "CodeDrop",
         description: "A snippet-sharing platform with JWT authentication and MongoDB aggregation queries.",
         technologies: ["Next.js", "Node.js", "MongoDB", "JWT"],
-        link: "https://github.com/Danish-Devx3/CodeDrop",
+        github: "https://github.com/Danish-Devx3/CodeDrop",
+        live: "https://code-drop-five.vercel.app/",
         image: "/project2.webp",
     },
     {
@@ -75,7 +95,8 @@ export const projects = [
         title: "Dev-Chatty",
         description: "An AI chatbot leveraging Google Generative AI with real-time conversations.",
         technologies: ["React", "Vite", "Google Gemini", "Netlify"],
-        link: "https://github.com/Danish-Devx3/Dev-Chatty",
+        github: "https://github.com/Danish-Devx3/Dev-Chatty",
+        live: "",
         image: "/project3.webp",
     },
 ];

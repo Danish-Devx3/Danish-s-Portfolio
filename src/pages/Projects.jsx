@@ -37,12 +37,16 @@ const Projects = () => {
                     {project.title}
                   </h3>
                   <div className="flex gap-2">
-                    {project.link && (
-                      <a href={project.link} target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-neutral-200 transition-colors">
-                        <FiExternalLink size={16} />
+                    {project.live && (
+                      <a href={project.live} target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-neutral-200 transition-colors" title="Live Demo">
+                        <FiExternalLink size={20} />
                       </a>
                     )}
-                    {/* Assuming link is source, if there's a demo link separate it. For now using generic link */}
+                    {project.github && (
+                      <a href={project.github} target="_blank" rel="noopener noreferrer" className="text-neutral-500 hover:text-neutral-200 transition-colors" title="View Code">
+                        <FiGithub size={20} />
+                      </a>
+                    )}
                   </div>
                 </div>
 

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 
 const TimeOnEarth = () => {
     const [seconds, setSeconds] = useState(0);
-    const birthDate = new Date("2000-01-01"); // Default date, can be updated from data.js
+    const birthDate = new Date("2000-01-01");
 
     useEffect(() => {
         const calculateSeconds = () => {
