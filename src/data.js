@@ -103,22 +103,22 @@ export const projects = [
 ];
 
 export const skills = [
-    { name: "JavaScript", icon: SiJavascript },
-    { name: "TypeScript", icon: SiTypescript },
-    { name: "Node.js", icon: FaNodeJs },
-    { name: "React", icon: FaReact },
-    { name: "Next.js", icon: SiNextdotjs },
-    { name: "Express", icon: SiExpress },
-    { name: "MongoDB", icon: SiMongodb },
-    { name: "PostgreSQL", icon: SiPostgresql },
-    { name: "Tailwind CSS", icon: SiTailwindcss },
-    { name: "Docker", icon: FaDocker },
-    { name: "AWS", icon: FaAws },
-    { name: "Socket.io", icon: SiSocketdotio },
-    { name: "Postman", icon: SiPostman },
-    { name: "Nginx", icon: SiNginx },
-    { name: "Vercel", icon: SiVercel },
-    { name: "Netlify", icon: SiNetlify },
+    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
+    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+    { name: "Node.js", icon: FaNodeJs, color: "#339933" },
+    { name: "React", icon: FaReact, color: "#61DAFB" },
+    { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" }, // White for dark mode compatibility
+    { name: "Express", icon: SiExpress, color: "#ffffff" },   // White for dark mode compatibility
+    { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+    { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+    { name: "Docker", icon: FaDocker, color: "#2496ED" },
+    { name: "AWS", icon: FaAws, color: "#FF9900" },
+    { name: "Socket.io", icon: SiSocketdotio, color: "#ffffff" }, // White for dark mode
+    { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+    { name: "Nginx", icon: SiNginx, color: "#009639" },
+    { name: "Vercel", icon: SiVercel, color: "#ffffff" }, // White for dark mode
+    { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
 ];
 
 export const blogs = [
