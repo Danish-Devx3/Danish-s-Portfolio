@@ -1,7 +1,9 @@
 
-import { FaReact, FaNodeJs, FaDocker, FaAws, FaGithub, FaPython, FaLinkedin, FaTwitter } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiExpress, SiJavascript, SiSocketdotio, SiPostman, SiNginx, SiVercel, SiNetlify } from "react-icons/si";
+import { FaReact, FaNodeJs, FaDocker, FaGithub, FaLinkedin, FaTwitter, FaGitAlt, FaMobileAlt, FaShieldAlt, FaTasks, FaCode, FaPuzzlePiece, FaHandshake } from "react-icons/fa";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiExpress, SiJavascript, SiPostman, SiNginx, SiVercel, SiNetlify, SiGraphql, SiJsonwebtokens, SiSupabase, SiFirebase, SiPrisma, SiJest, SiCypress, SiVitest, SiReactquery, SiZod, SiGithubactions, SiGoogle } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
+import { GiBearFace } from "react-icons/gi";
+import { TbApi } from "react-icons/tb";
 
 export const personalDetails = {
     name: "Danish Ansari",
@@ -103,22 +105,73 @@ export const projects = [
 ];
 
 export const skills = [
-    { name: "JavaScript", icon: SiJavascript, color: "#F7DF1E" },
-    { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
-    { name: "Node.js", icon: FaNodeJs, color: "#339933" },
-    { name: "React", icon: FaReact, color: "#61DAFB" },
-    { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" }, // White for dark mode compatibility
-    { name: "Express", icon: SiExpress, color: "#ffffff" },   // White for dark mode compatibility
-    { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
-    { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
-    { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
-    { name: "Docker", icon: FaDocker, color: "#2496ED" },
-    { name: "AWS", icon: FaAws, color: "#FF9900" },
-    { name: "Socket.io", icon: SiSocketdotio, color: "#ffffff" }, // White for dark mode
-    { name: "Postman", icon: SiPostman, color: "#FF6C37" },
-    { name: "Nginx", icon: SiNginx, color: "#009639" },
-    { name: "Vercel", icon: SiVercel, color: "#ffffff" }, // White for dark mode
-    { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+    {
+        category: "Frontend",
+        items: [
+            { name: "React.js", icon: FaReact, color: "#61DAFB" },
+            { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
+            { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+            { name: "Zustand", icon: GiBearFace, color: "#f3d05d" },
+            { name: "Zod", icon: SiZod, color: "#3068b7" },
+            { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
+            { name: "TanStack Query", icon: SiReactquery, color: "#FF4154" },
+            { name: "Responsive Design", icon: FaMobileAlt, color: "#2fa4d9" },
+        ]
+    },
+    {
+        category: "Backend",
+        items: [
+            { name: "Node.js", icon: FaNodeJs, color: "#339933" },
+            { name: "Express.js", icon: SiExpress, color: "#ffffff" },
+            { name: "REST APIs", icon: TbApi, color: "#005571" },
+            { name: "GraphQL", icon: SiGraphql, color: "#E10098" },
+            { name: "JWT Auth", icon: SiJsonwebtokens, color: "#D63AFF" },
+            { name: "OAuth", icon: SiGoogle, color: "#4285F4" },
+            { name: "Better Auth", icon: FaShieldAlt, color: "#5C2D91" },
+        ]
+    },
+    {
+        category: "Databases",
+        items: [
+            { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
+            { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
+            { name: "Prisma ORM", icon: SiPrisma, color: "#2D3748" },
+            { name: "Mongoose", icon: SiMongodb, color: "#880000" }, // Reusing MongoDB icon with Mongoose red
+            { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
+            { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
+        ]
+    },
+    {
+        category: "DevOps & Deployment",
+        items: [
+            { name: "Docker", icon: FaDocker, color: "#2496ED" },
+            { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" },
+            { name: "CI/CD", icon: FaTasks, color: "#4B32C3" },
+            { name: "Vercel", icon: SiVercel, color: "#ffffff" },
+            { name: "Netlify", icon: SiNetlify, color: "#00C7B7" },
+            { name: "Nginx", icon: SiNginx, color: "#009639" },
+        ]
+    },
+    {
+        category: "Testing",
+        items: [
+            { name: "Jest", icon: SiJest, color: "#C21325" },
+            { name: "Vitest", icon: SiVitest, color: "#6E9F18" },
+            { name: "Cypress", icon: SiCypress, color: "#69D3A7" },
+            { name: "Postman", icon: SiPostman, color: "#FF6C37" },
+        ]
+    },
+    {
+        category: "Tools & Practices",
+        items: [
+            { name: "Git", icon: FaGitAlt, color: "#F05032" },
+            { name: "GitHub", icon: FaGithub, color: "#ffffff" },
+            { name: "Agile", icon: FaTasks, color: "#0052CC" },
+            { name: "Code Review", icon: FaCode, color: "#ADFF2F" },
+            { name: "Problem Solving", icon: FaPuzzlePiece, color: "#FFD700" },
+            { name: "Collaboration", icon: FaHandshake, color: "#FF69B4" },
+        ]
+    }
 ];
 
 export const blogs = [
