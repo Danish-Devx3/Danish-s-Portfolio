@@ -4,20 +4,23 @@ import { skills } from '../data'
 const Skills = () => {
     return (
         <section id='skills' className="scroll-mt-32">
-            <h2 className="text-3xl font-bold mb-8 text-neutral-100 tracking-tight">Skills</h2>
+            <div className="mb-12">
+                <span className="text-neutral-500 text-sm font-mono mb-2 block">&lt; Projects</span>
+                <h2 className="text-3xl font-bold text-white tracking-tight">Skills & Tools</h2>
+            </div>
 
-            <div className="grid gap-10">
+            <div className="grid gap-12">
                 {skills.map((category, idx) => (
                     <div key={idx}>
-                        <h3 className="text-sm font-semibold text-neutral-500 uppercase tracking-wider mb-4">{category.category}</h3>
-                        <div className="flex flex-wrap gap-3">
+                        <h3 className="text-sm font-bold text-white border-b border-neutral-800 pb-2 mb-6 inline-block pr-8">{category.category}</h3>
+                        <div className="flex flex-wrap gap-x-8 gap-y-4">
                             {category.items.map((skill, sIdx) => (
                                 <div
                                     key={sIdx}
-                                    className="flex items-center gap-2 px-3 py-1.5 bg-neutral-900/50 rounded text-sm text-neutral-300 hover:text-white hover:bg-neutral-800 transition-colors cursor-default"
+                                    className="flex items-center gap-3 text-neutral-400 hover:text-white transition-colors cursor-default group"
                                 >
-                                    <skill.icon size={16} style={{ color: skill.color }} />
-                                    <span>{skill.name}</span>
+                                    <skill.icon size={20} className="group-hover:text-white transition-colors" style={{ color: skill.color }} />
+                                    <span className="text-sm font-medium">{skill.name}</span>
                                 </div>
                             ))}
                         </div>

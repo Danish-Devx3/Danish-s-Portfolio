@@ -1,4 +1,5 @@
-import Navbar from "./pages/Navbar";
+import Sidebar from "./components/Sidebar";
+import Header from "./components/Header";
 import About from "./pages/About";
 import Experience from "./pages/Experience";
 import Projects from "./pages/Projects";
@@ -7,21 +8,22 @@ import Contact from "./pages/Contact";
 
 function App() {
     return (
-        <div className="min-h-screen bg-neutral-950 text-neutral-200 selection:bg-white selection:text-black">
-            <div className="max-w-2xl mx-auto px-6 pb-32 pt-10">
-                <Navbar />
-                <main className="space-y-32">
-                    <About />
-                    <Projects />
-                    <Experience />
-                    <Skills />
-                    <Contact />
-                </main>
+        <div className="min-h-screen bg-black text-white font-sans selection:bg-neutral-800 selection:text-white">
+            <Sidebar />
+            <Header />
 
-                <footer className="mt-20 text-center text-sm text-neutral-600 pb-10">
-                    <p className="mt-2 text-xs">Different by Design. &copy; {new Date().getFullYear()}</p>
+            <main className="md:ml-64 pt-24 px-6 md:px-12 pb-20 max-w-5xl mx-auto space-y-32">
+                <About />
+                <Projects />
+                <Skills />
+                <Experience />
+                <Contact />
+
+                <footer className="pt-20 border-t border-neutral-900 mt-20 text-sm text-neutral-500 flex justify-between">
+                    <p>© {new Date().getFullYear()} Built with React & Tailwind</p>
+                    <p>Designed by Danish Ansari</p>
                 </footer>
-            </div>
+            </main>
         </div>
     );
 }
