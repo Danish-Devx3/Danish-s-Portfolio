@@ -1,48 +1,63 @@
 
 import { FaReact, FaNodeJs, FaDocker, FaGithub, FaLinkedin, FaTwitter, FaGitAlt, FaMobileAlt, FaShieldAlt, FaTasks, FaCode, FaPuzzlePiece, FaHandshake } from "react-icons/fa";
-import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiExpress, SiJavascript, SiPostman, SiNginx, SiVercel, SiNetlify, SiGraphql, SiJsonwebtokens, SiSupabase, SiFirebase, SiPrisma, SiJest, SiCypress, SiVitest, SiReactquery, SiZod, SiGithubactions, SiGoogle } from "react-icons/si";
+import { SiNextdotjs, SiTypescript, SiTailwindcss, SiPostgresql, SiMongodb, SiExpress, SiPostman, SiNginx, SiVercel, SiNetlify, SiGraphql, SiJsonwebtokens, SiSupabase, SiPrisma, SiJest, SiCypress, SiVitest, SiReactquery, SiZod, SiGithubactions, SiGoogle, SiRedux, SiVuedotjs, SiAngular, SiWebpack, SiBabel, SiAmazonwebservices, SiGooglecloud } from "react-icons/si";
 import { HiMail } from "react-icons/hi";
 import { GiBearFace } from "react-icons/gi";
 import { TbApi } from "react-icons/tb";
 
 export const personalDetails = {
     name: "Danish Ansari",
-    role: "Full Stack Developer",
+    role: "Full-Stack Developer",
     email: "danish.devx3@gmail.com",
     socials: [
         { name: "GitHub", url: "https://github.com/Danish-Devx3", icon: FaGithub },
         { name: "LinkedIn", url: "https://www.linkedin.com/in/danishansaridev", icon: FaLinkedin },
-        { name: "Twitter", url: "https://twitter.com/Danish_Devx3", icon: FaTwitter }, // Assuming handle from prev info, text didn't specify twitter handle explicitly but referenced "danish.devx3" often
+        { name: "Twitter", url: "https://twitter.com/Danish_Devx3", icon: FaTwitter },
         { name: "Email", url: "mailto:danish.devx3@gmail.com", icon: HiMail },
     ],
     bookCallUrl: "https://calendar.google.com/calendar/u/0/r/eventedit?text=Book+a+Call+with+Danish+Ansari&details=Let%27s+discuss+your+project+ideas!",
-    about: "I am a passionate Full-Stack Developer specializing in the MERN stack (MongoDB, Express.js, React.js, Node.js) and Next.js, with expertise in building REST APIs, designing scalable architectures, and developing responsive front-end applications. Skilled in JavaScript, TypeScript, Tailwind CSS, and API testing with Postman, I also bring experience with Docker, GitHub Actions, and CI/CD pipelines to ensure reliable and efficient deployments on Vercel, Netlify, and Nginx.",
-    birthDate: "2002-01-01", // Approximate based on College start 2023 (assuming ~21y/o then? or 18? Defaulting to year 2000-2004 range if not specified. Text says 'Time on Earth' counter wanted.)
+    about: "Full-Stack MERN Developer experienced in building scalable, responsive production web applications using React.js, Node.js, Express, and MongoDB. Strong expertise in reusable UI systems, secure RESTful APIs, JWT-based authentication, and performance optimization across devices and browsers.",
 };
 
 export const experiences = [
     {
         company: "noDevBuild",
         role: "Full-Stack Developer Intern",
-        duration: "Nov 2025 - Present",
-        location: "Noida, Uttar Pradesh, India",
-        logo: "/placeholder-logo.png", // Replace if available
+        duration: "Oct 2025 - Present",
+        location: "Remote",
+        logo: "/placeholder-logo.png",
         description: [
-            "Working on full-stack development tasks.",
-            "Building scalable architectures and responsive front-end applications.",
+            "Developed scalable MERN stack applications for venture studio portfolio companies.",
+            "Built reusable React components and modular front-end libraries to keep architecture maintainable.",
+            "Translated Figma wireframes into pixel-perfect, responsive UIs optimized for cross-browser support.",
+            "Designed secure RESTful APIs with JWT-based authentication and role-based access control.",
+            "Optimized application performance using query tuning, indexing, and reduced unnecessary re-renders.",
         ],
     },
     {
-        company: "Zwishh",
-        role: "Back End Developer",
+        company: "BYTECOMMERCE PVT LTD",
+        role: "Backend Developer Intern",
         duration: "Apr 2025 - Jun 2025",
-        location: "Remote/Hybrid", // Not specified in snippet, assumed based on context or add if known. Text says just dates. content says "Back End Developer".
+        location: "Remote/Hybrid",
         logo: "/placeholder-logo.png",
         description: [
-            "Worked on both frontend and backend tasks to build and maintain production-grade web features.",
-            "Developed RESTful APIs for user authentication using Node.js and Express.js.",
-            "Wrote automated API testing scripts using Postman to ensure reliability and reduce bugs.",
-            "Built responsive landing page components using React.js, improving user experience and performance.",
+            "Built and optimized high-traffic REST APIs using Node.js and Express.js.",
+            "Designed scalable MongoDB schemas and indexing strategies for 5,000+ users.",
+            "Implemented secure authentication and authorization with JWT, OAuth, and email verification.",
+            "Authored Postman collections and API docs across 20+ endpoints to improve integration speed.",
+        ],
+    },
+    {
+        company: "Primeox",
+        role: "Frontend Developer (Freelance)",
+        duration: "Jan 2025 - Mar 2025",
+        location: "Remote",
+        logo: "/placeholder-logo.png",
+        description: [
+            "Built responsive, accessible React.js interfaces using hooks and Zustand state management.",
+            "Improved load performance via caching, lazy loading, and component-level optimization.",
+            "Delivered SEO-optimized, mobile-first landing pages with improved organic engagement.",
+            "Conducted cross-browser testing and performance benchmarking across web-capable devices.",
         ],
     },
 ];
@@ -52,65 +67,70 @@ export const education = [
         institution: "Magadh University",
         degree: "Bachelor's in Computer Applications (BCA)",
         duration: "July 2023 - August 2026",
-        description: "Computer and Information Sciences and Support Services"
+        description: "Computer and Information Sciences and Support Services",
     }
 ];
 
 export const projects = [
     {
-        id: 4,
-        title: "Notive 📝",
-        description: "A modern, feature-rich note-taking application built with Next.js 15, featuring secure authentication, rich text editing, and a beautiful user interface.",
-        technologies: ["Next.js 15", "TypeScript", "Tailwind CSS", "shadcn/ui", "Tiptap", "Neon DB", "Drizzle ORM", "Better Auth"],
-        github: "https://github.com/Danish-Devx3/notive",
-        live: "https://notive-manage-note.vercel.app/",
-        image: "/project1.webp",
-    },
-    {
-        id: 5,
-        title: "Archi-Text",
-        description: "Visualize chaos. Instantly convert natural language, code, and raw data into professional diagrams using local AI.",
-        technologies: ["Next.js 16", "React 19", "Tailwind CSS 4", "Mermaid.js", "Ollama", "Lucide React"],
-        github: "https://github.com/Danish-Devx3/archi-text",
-        live: "", // Add live link if available
-        image: "/archi-text.png",
-    },
-    {
         id: 1,
-        title: "Shotsy – AI Video Generator",
-        description: "An AI-powered short video generator integrating Google Gemini, AssemblyAI, and Murf AI.",
-        technologies: ["Next.js", "Tailwind CSS", "Gemini API", "AssemblyAI", "Murf AI"],
-        github: "https://github.com/Danish-Devx3/Shotsy-Short-Video-GenAi",
-        live: "",
-        image: "/project1.webp",
+        title: "ReviewyAI",
+        description: "AI code review platform with modular full-stack architecture, secure APIs, and production-focused performance.",
+        technologies: ["Next.js", "Node.js", "Prisma", "Pinecone", "Inngest"],
+        github: "https://github.com/Danish-Devx3/ReviewyAI",
+        live: "https://reviewy-ai.vercel.app/",
+        image: "/ReviewyAI.png",
     },
     {
         id: 2,
-        title: "CodeDrop",
-        description: "A snippet-sharing platform with JWT authentication and MongoDB aggregation queries.",
-        technologies: ["Next.js", "Node.js", "MongoDB", "JWT"],
-        github: "https://github.com/Danish-Devx3/CodeDrop",
-        live: "https://code-drop-five.vercel.app/",
-        image: "/project2.webp",
+        title: "Notive",
+        description: "Collaborative note-taking platform with secure authentication, OAuth flows, and optimized query performance.",
+        technologies: ["Next.js", "TypeScript", "PostgreSQL", "Better Auth"],
+        github: "https://github.com/Danish-Devx3/notive",
+        live: "https://notive-manage-note.vercel.app/",
+        image: "/Notive.png",
     },
     {
         id: 3,
-        title: "Dev-Chatty",
-        description: "An AI chatbot leveraging Google Generative AI with real-time conversations.",
-        technologies: ["React", "Vite", "Google Gemini", "Netlify"],
-        github: "https://github.com/Danish-Devx3/Dev-Chatty",
+        title: "Shotsy – AI Video Generator",
+        description: "Platform that converts text prompts into short-form AI videos with containerized deployment and CI/CD.",
+        technologies: ["Next.js", "Remotion", "Docker", "AI APIs", "GitHub Actions"],
+        github: "https://github.com/Danish-Devx3/Shotsy-Short-Video-GenAi",
         live: "",
-        image: "/project3.webp",
+        image: "/Shotsy.webp",
+    },
+    {
+        id: 4,
+        title: "CodeDrop",
+        description: "MERN code snippet sharing platform with JWT auth, RBAC, and optimized MongoDB aggregation workflows.",
+        technologies: ["React.js", "Node.js", "Express.js", "MongoDB", "TypeScript"],
+        github: "https://github.com/Danish-Devx3/CodeDrop",
+        live: "https://code-drop-five.vercel.app/",
+        image: "/CodeDrop.webp",
     },
 ];
 
 export const skills = [
     {
+        category: "Languages",
+        items: [
+            { name: "JavaScript (ES6+)", icon: FaCode, color: "#F7DF1E" },
+            { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+            { name: "HTML5", icon: FaCode, color: "#E34F26" },
+            { name: "CSS3", icon: FaCode, color: "#1572B6" },
+            { name: "SQL", icon: TbApi, color: "#336791" },
+            { name: "Python", icon: FaCode, color: "#3776AB" },
+        ]
+    },
+    {
         category: "Frontend",
         items: [
             { name: "React.js", icon: FaReact, color: "#61DAFB" },
             { name: "Next.js", icon: SiNextdotjs, color: "#ffffff" },
+            { name: "Redux", icon: SiRedux, color: "#764ABC" },
             { name: "TypeScript", icon: SiTypescript, color: "#3178C6" },
+            { name: "Vue.js", icon: SiVuedotjs, color: "#42B883" },
+            { name: "Angular", icon: SiAngular, color: "#DD0031" },
             { name: "Zustand", icon: GiBearFace, color: "#f3d05d" },
             { name: "Zod", icon: SiZod, color: "#3068b7" },
             { name: "Tailwind CSS", icon: SiTailwindcss, color: "#06B6D4" },
@@ -136,15 +156,19 @@ export const skills = [
             { name: "MongoDB", icon: SiMongodb, color: "#47A248" },
             { name: "PostgreSQL", icon: SiPostgresql, color: "#4169E1" },
             { name: "Prisma ORM", icon: SiPrisma, color: "#2D3748" },
-            { name: "Mongoose", icon: SiMongodb, color: "#880000" }, // Reusing MongoDB icon with Mongoose red
+            { name: "Drizzle ORM", icon: SiPrisma, color: "#C5F74F" },
+            { name: "Mongoose", icon: SiMongodb, color: "#880000" },
             { name: "Supabase", icon: SiSupabase, color: "#3ECF8E" },
-            { name: "Firebase", icon: SiFirebase, color: "#FFCA28" },
         ]
     },
     {
         category: "DevOps & Deployment",
         items: [
             { name: "Docker", icon: FaDocker, color: "#2496ED" },
+            { name: "AWS", icon: SiAmazonwebservices, color: "#FF9900" },
+            { name: "GCP", icon: SiGooglecloud, color: "#4285F4" },
+            { name: "Webpack", icon: SiWebpack, color: "#8DD6F9" },
+            { name: "Babel", icon: SiBabel, color: "#F9DC3E" },
             { name: "GitHub Actions", icon: SiGithubactions, color: "#2088FF" },
             { name: "CI/CD", icon: FaTasks, color: "#4B32C3" },
             { name: "Vercel", icon: SiVercel, color: "#ffffff" },
@@ -162,6 +186,15 @@ export const skills = [
         ]
     },
     {
+        category: "AI (Project Experience)",
+        items: [
+            { name: "Pinecone", icon: TbApi, color: "#2E8B57" },
+            { name: "RAG", icon: TbApi, color: "#8A2BE2" },
+            { name: "OpenAI API", icon: TbApi, color: "#10A37F" },
+            { name: "Google Gemini API", icon: SiGoogle, color: "#4285F4" },
+        ]
+    },
+    {
         category: "Tools & Practices",
         items: [
             { name: "Git", icon: FaGitAlt, color: "#F05032" },
@@ -175,7 +208,6 @@ export const skills = [
 ];
 
 export const blogs = [
-    // Placeholder blog data can remain or be updated if user provides blog info. Keeping previous placeholders for now.
     {
         id: 1,
         title: "Building Real-time Apps with Socket.io",
@@ -194,13 +226,13 @@ export const blogs = [
 
 export const certifications = [
     {
-        title: "Node.js Certified",
-        issuer: "Certification Authority", // Replace if known
-        date: "2024", // Replace if known
+        title: "React Certified Developer",
+        issuer: "Scaler Academy",
+        date: "2024",
     },
     {
-        title: "React Certified",
-        issuer: "Certification Authority",
+        title: "Node.js Certified Developer",
+        issuer: "Scaler Academy",
         date: "2024",
     }
 ];
