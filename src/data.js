@@ -38,7 +38,7 @@ export const experiences = [
         company: "BYTECOMMERCE PVT LTD",
         role: "Backend Developer Intern",
         duration: "Apr 2025 - Jun 2025",
-        location: "Remote/Hybrid",
+        location: "Remote",
         logo: "/placeholder-logo.png",
         description: [
             "Built and optimized high-traffic REST APIs using Node.js and Express.js.",
