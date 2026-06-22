@@ -16,7 +16,15 @@ export const personalDetails = {
         { name: "Email", url: "mailto:danish.devx3@gmail.com", icon: HiMail },
     ],
     bookCallUrl: "https://calendar.google.com/calendar/u/0/r/eventedit?text=Book+a+Call+with+Danish+Ansari&details=Let%27s+discuss+your+project+ideas!",
-    about: "Full-Stack MERN Developer experienced in building scalable, responsive production web applications using React.js, Node.js, Express, and MongoDB. Strong expertise in reusable UI systems, secure RESTful APIs, JWT-based authentication, and performance optimization across devices and browsers.",
+    resumeUrl: "/Danish_Ansari_Resume.pdf",
+    resumeFileName: "Danish_Ansari_Resume.pdf",
+    avatar: "https://github.com/Danish-Devx3.png?size=400",
+    handle: "@Danish_Devx3",
+    location: "India",
+    tagline: "Building production-grade web apps",
+    available: true,
+    githubUsername: "Danish-Devx3",
+    about: "I build scalable, responsive production web apps end-to-end with React.js, Node.js, Express, and MongoDB. I care about reusable UI systems, secure REST APIs, JWT-based auth, and squeezing out performance across every device and browser.",
 };
 
 export const experiences = [
@@ -25,7 +33,6 @@ export const experiences = [
         role: "Full-Stack Developer Intern",
         duration: "Oct 2025 - Present",
         location: "Remote",
-        logo: "/placeholder-logo.png",
         description: [
             "Developed scalable MERN stack applications for venture studio portfolio companies.",
             "Built reusable React components and modular front-end libraries to keep architecture maintainable.",
@@ -39,7 +46,6 @@ export const experiences = [
         role: "Backend Developer Intern",
         duration: "Apr 2025 - Jun 2025",
         location: "Remote",
-        logo: "/placeholder-logo.png",
         description: [
             "Built and optimized high-traffic REST APIs using Node.js and Express.js.",
             "Designed scalable MongoDB schemas and indexing strategies for 5,000+ users.",
@@ -52,7 +58,6 @@ export const experiences = [
         role: "Frontend Developer (Freelance)",
         duration: "Jan 2025 - Mar 2025",
         location: "Remote",
-        logo: "/placeholder-logo.png",
         description: [
             "Built responsive, accessible React.js interfaces using hooks and Zustand state management.",
             "Improved load performance via caching, lazy loading, and component-level optimization.",
@@ -229,10 +234,14 @@ export const certifications = [
         title: "React Certified Developer",
         issuer: "Scaler Academy",
         date: "2024",
+        url: "https://moonshot.scaler.com/s/li/iamIOOnKOq",
+        image: "https://moonshot.scaler.com/s/image/li/iamIOOnKOq",
     },
     {
         title: "Node.js Certified Developer",
         issuer: "Scaler Academy",
         date: "2024",
+        url: "https://moonshot.scaler.com/s/li/1ulIZ_u7pR",
+        image: "https://moonshot.scaler.com/s/image/li/1ulIZ_u7pR",
     }
 ];

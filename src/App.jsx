@@ -1,11 +1,13 @@
-import { useEffect, useState } from "react";
-import Sidebar from "./components/Sidebar";
-import Header from "./components/Header";
+import { useEffect, useState, useRef } from "react";
+import Navbar from "./pages/Navbar";
 import About from "./pages/About";
-import Experience from "./pages/Experience";
-import Projects from "./pages/Projects";
 import Skills from "./pages/Skills";
+import Experience from "./pages/Experience";
+import GithubActivity from "./pages/GithubActivity";
+import Projects from "./pages/Projects";
+import Thoughts from "./pages/Thoughts";
 import Contact from "./pages/Contact";
+import { personalDetails } from "./data";
 
 const THEME_STORAGE_KEY = "theme";
 
@@ -13,10 +15,9 @@ function App() {
     const [theme, setTheme] = useState(() =>
         document.documentElement.classList.contains("dark") ? "dark" : "light"
     );
+    const glowRef = useRef(null);
 
-    const toggleTheme = () => {
-        setTheme((prevTheme) => (prevTheme === "dark" ? "light" : "dark"));
-    };
+    const toggleTheme = () => setTheme((prev) => (prev === "dark" ? "light" : "dark"));
 
     useEffect(() => {
         const root = document.documentElement;
@@ -29,23 +30,53 @@ function App() {
         window.localStorage.setItem(THEME_STORAGE_KEY, theme);
     }, [theme]);
 
-    return (
-        <div className="min-h-screen bg-neutral-50 text-neutral-900 dark:bg-black dark:text-white font-sans selection:bg-neutral-300 dark:selection:bg-neutral-800 selection:text-neutral-900 dark:selection:text-white transition-colors duration-300">
-            <Sidebar />
-            <Header theme={theme} onToggleTheme={toggleTheme} />
+    // Cursor spotlight: feed pointer position into CSS vars (rAF-throttled).
+    useEffect(() => {
+        const el = glowRef.current;
+        if (!el) return undefined;
+        let raf = 0;
+        const onMove = (e) => {
+            cancelAnimationFrame(raf);
+            raf = requestAnimationFrame(() => {
+                el.style.setProperty("--mx", `${e.clientX}px`);
+                el.style.setProperty("--my", `${e.clientY}px`);
+            });
+        };
+        window.addEventListener("pointermove", onMove);
+        return () => {
+            window.removeEventListener("pointermove", onMove);
+            cancelAnimationFrame(raf);
+        };
+    }, []);
 
-            <main className="md:ml-64 pt-24 px-6 md:px-12 pb-20 max-w-5xl mx-auto space-y-32">
+    return (
+        <div className="relative min-h-screen">
+            <div className="bg-grid pointer-events-none fixed inset-0 z-0" aria-hidden="true" />
+            <div ref={glowRef} className="cursor-glow pointer-events-none fixed inset-0 z-0" aria-hidden="true" />
+
+            <main className="relative z-10 mx-auto max-w-3xl px-5 sm:px-6 pt-20 pb-32 space-y-24 md:space-y-28">
                 <About />
-                <Projects />
+                <GithubActivity theme={theme} />
                 <Skills />
                 <Experience />
+                <Projects />
+                <Thoughts />
                 <Contact />
 
-                <footer className="pt-20 border-t border-neutral-200 dark:border-neutral-900 mt-20 text-sm text-neutral-600 dark:text-neutral-500 flex justify-between">
-                    <p>© {new Date().getFullYear()} Built with React & Tailwind</p>
-                    <p>Designed by Danish Ansari</p>
+                <footer className="pt-12 border-t border-neutral-200 dark:border-white/10 text-center space-y-3">
+                    <p className="font-mono text-sm italic text-neutral-500 dark:text-neutral-400">
+                        &quot;Nothing is perfect — but you can make it better.&quot;
+                    </p>
+                    <p className="text-sm text-neutral-600 dark:text-neutral-500">
+                        Designed &amp; Built with <span className="text-red-500">♥</span> by {personalDetails.name}
+                    </p>
+                    <p className="font-mono text-xs text-neutral-400 dark:text-neutral-600">
+                        © {new Date().getFullYear()} — All rights reserved
+                    </p>
                 </footer>
             </main>
+
+            <Navbar theme={theme} onToggleTheme={toggleTheme} />
         </div>
     );
 }
